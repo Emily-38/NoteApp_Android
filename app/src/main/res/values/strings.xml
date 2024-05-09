@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NoteApp</string>
+    <string name="icon_add">Icon add</string>
+    <string name="icon_delete">Icon_delete</string>
+</resources>

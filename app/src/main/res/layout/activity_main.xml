@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <!-- on crée un button floatingActionButton qui prend un id  un hauteur et une largeur qui serra restreint a la taille de ce qu'il y a dedans
+   on peut aussi lui faire prendre toute la taille du parent avec "match_parent" une marge de 16 une image  une description de l'image et sa position
+   dans le parent
+   -->
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/add_new_note_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    android:layout_margin="16dp"
+    android:src="@drawable/_04947_ffffff"
+    android:contentDescription="@string/icon_add"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/note_recycler_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:listitem="@layout/item_note"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toTopOf="parent"
+      app:layout_constraintStart_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
